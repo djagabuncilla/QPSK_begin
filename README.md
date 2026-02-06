@@ -22,7 +22,7 @@ QPSK_begin/
 %Чтение сигнала
 rx = Read_signal('1.pcm');
 %Нормирование сигнала
-rx_norm = Norm_signal(raw_signal);
+rx_norm = Norm_signal(rx);
 %Визуализация и расчёт SNR
 plot_dvbs2_simple(rx_norm, sps); %sps - кол-во отсчётов на символ (в нашем случае 2.5)
 ```
